@@ -41,7 +41,7 @@ fun WeeklySpecialCard() {
     ) {
         Text(
             text = stringResource(R.string.weekly_special),
-            style = MaterialTheme.typography.h1,
+            style = MaterialTheme.typography.h2,
             color = charcoal,
             modifier = Modifier
                 .padding(8.dp)
@@ -60,7 +60,7 @@ fun MenuDish(navController: NavHostController? = null, dish: Dish) {
             .fillMaxWidth()
             .padding(8.dp)) {
             Column() {
-                Text(text = dish.name, style = MaterialTheme.typography.h2, color = charcoal)
+                Text(text = dish.name, style = MaterialTheme.typography.body1, color = charcoal)
                 Text(
                     text = dish.description,
                     style = MaterialTheme.typography.body1,
